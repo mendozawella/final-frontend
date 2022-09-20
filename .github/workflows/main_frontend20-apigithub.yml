@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - 01-latest-sitercrudnor
+name: Build and deploy Node.js app to Azure Web App - frontend20-apigithub
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: '01-latest-sitercrudnor'
+          app-name: 'frontend20-apigithub'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_94573FCBF50F4BBA8570DB71C6EE0C89 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3DB972ACD3274F61A91FF861E2708300 }}
           package: .
